@@ -47,4 +47,10 @@ article.teaser--top {
 
   margin-top: 88px;
   margin-bottom: 79px;
+
+  .teaser-image {
+    @include size($teaser-image-size);
+    @include retina-image('../img/chevron-teaser', $teaser-image-size);
+    margin-bottom: 18px;
+  }
 }
