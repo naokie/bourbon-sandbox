@@ -612,11 +612,10 @@ article.teaser--top {
   article.teaser--top .teaser-image {
     height: 228px;
     width: 624px;
-    background-image: url("../img/chevron-teaser.png");
+    background-image: url("../img/chevron-no-background.svg"), -webkit-linear-gradient(#e34731 0%, #e34d35 33%, #e46143 34%, #e56244 66%, #e57b53 67%, #e57b53 100%);
+    background-image: url("../img/chevron-no-background.svg"), linear-gradient(to   , #e34d35 33%, #e46143 34%, #e56244 66%, #e57b53 67%, #e57b53 100%);
+    background-position: center bottom;
+    border-radius: 8px;
     margin-bottom: 18px; }
-    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-      article.teaser--top .teaser-image {
-        background-image: url("../img/chevron-teaser_2x.png");
-        background-size: 624px 228px; } }
 
 /*# sourceMappingURL=styles.css.map */
