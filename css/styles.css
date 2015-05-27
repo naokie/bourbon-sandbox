@@ -586,4 +586,13 @@ header {
       header nav a:last-child {
         margin-right: 9px; }
 
+article.teaser--top {
+  float: left;
+  display: block;
+  margin-right: 4.56432%;
+  width: 65.14523%;
+  margin-left: 17.42739%; }
+  article.teaser--top:last-child {
+    margin-right: 0; }
+
 /*# sourceMappingURL=styles.css.map */

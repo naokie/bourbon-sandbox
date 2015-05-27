@@ -39,3 +39,9 @@ header {
     }
   }
 }
+
+// Teaser Top
+article.teaser--top {
+  @include span-columns(8);
+  @include shift(2);
+}
