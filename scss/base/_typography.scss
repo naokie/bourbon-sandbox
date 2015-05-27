@@ -16,12 +16,22 @@ h6 {
   font-family: $heading-font-family;
   font-size: $heading1-font-size;
   line-height: $heading-line-height;
+  text-transform: uppercase;
   margin: 0 0 $small-spacing;
+}
+h2 {
+  font-size: $heading2-font-size;
 }
 
 p {
   font-size: $article-font-size;
   margin: 0 0 $small-spacing;
+}
+
+.meta {
+  color: $light-gray;
+  text-transform: uppercase;
+  opacity: .5;
 }
 
 a {
@@ -38,6 +48,11 @@ a {
   &:active,
   &:focus {
     outline: none;
+  }
+
+  .continue-reading & {
+    padding-right: 25px;
+    background: url(../img/icon-arrow.svg) center right no-repeat;
   }
 }
 
