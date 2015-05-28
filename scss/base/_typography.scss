@@ -19,19 +19,34 @@ h6 {
   text-transform: uppercase;
   margin: 0 0 $small-spacing;
 }
-h2 {
+h2,
+h3 {
   font-size: $heading2-font-size;
+  margin: 2px 0 10px;
+}
+h3 {
+  color: $red;
+  text-transform: none;
+}
+h5 {
+  color: $red;
+  font-size: $article-font-size;
+  margin: 0 0 8px;
 }
 
 p {
   font-size: $article-font-size;
-  margin: 0 0 $small-spacing;
+  margin: 0 0 7px;
 }
 
 .meta {
   color: $light-gray;
   text-transform: uppercase;
   opacity: .5;
+
+  #recent-posts & {
+    font-size: $small-font-size;
+  }
 }
 
 a {

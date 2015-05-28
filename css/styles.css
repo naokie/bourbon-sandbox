@@ -523,17 +523,30 @@ h6 {
   text-transform: uppercase;
   margin: 0 0 0.75em; }
 
-h2 {
-  font-size: 1.75em; }
+h2,
+h3 {
+  font-size: 1.75em;
+  margin: 2px 0 10px; }
+
+h3 {
+  color: #e3857d;
+  text-transform: none; }
+
+h5 {
+  color: #e3857d;
+  font-size: 1.125em;
+  margin: 0 0 8px; }
 
 p {
   font-size: 1.125em;
-  margin: 0 0 0.75em; }
+  margin: 0 0 7px; }
 
 .meta {
   color: #551501;
   text-transform: uppercase;
   opacity: .5; }
+  #recent-posts .meta {
+    font-size: 0.875em; }
 
 a {
   color: #e3857d;
@@ -617,5 +630,77 @@ article.teaser--top {
     background-position: center bottom;
     border-radius: 8px;
     margin-bottom: 18px; }
+
+#recent-posts {
+  margin-left: 17.42739%;
+  float: left;
+  display: block;
+  margin-right: 4.56432%;
+  width: 65.14523%;
+  padding: 10px 0 75px 0; }
+  #recent-posts:last-child {
+    margin-right: 0; }
+  #recent-posts .teaser--recent {
+    margin-top: 50px; }
+  #recent-posts .meta {
+    float: right; }
+
+#subscribe {
+  margin-left: 8.71369%;
+  float: left;
+  display: block;
+  margin-right: 4.56432%;
+  width: 82.57261%;
+  padding: 48px 0 45px;
+  margin-bottom: 105px;
+  background: white;
+  border-top: 4px solid #e3857d; }
+  #subscribe:last-child {
+    margin-right: 0; }
+  #subscribe .note {
+    float: left;
+    margin-left: 40px; }
+  #subscribe .follow {
+    float: right;
+    margin-right: 40px; }
+
+#about {
+  margin-left: 8.71369%;
+  float: left;
+  display: block;
+  margin-right: 4.56432%;
+  width: 73.85892%;
+  padding: 79px 0 140px; }
+  #about:last-child {
+    margin-right: 0; }
+  #about .tower-icon, #about p {
+    margin-top: 30px; }
+  #about .tower-icon {
+    float: left;
+    display: block;
+    margin-right: 6.17978%;
+    width: 17.41573%;
+    background-image: url("../img/icon-tower.png");
+    height: 147px;
+    background-repeat: no-repeat;
+    background-position: center center; }
+    #about .tower-icon:last-child {
+      margin-right: 0; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+      #about .tower-icon {
+        background-image: url("../img/icon-tower_2x.png");
+        background-size: 114px 147px; } }
+
+footer {
+  float: left;
+  display: block;
+  margin-right: 4.56432%;
+  width: 100%;
+  font-size: 0.875em;
+  height: 72px;
+  line-height: 72px;
+  text-align: center; }
+  footer:last-child {
+    margin-right: 0; }
 
 /*# sourceMappingURL=styles.css.map */

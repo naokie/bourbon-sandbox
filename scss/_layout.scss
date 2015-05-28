@@ -56,3 +56,70 @@ article.teaser--top {
     margin-bottom: 18px;
   }
 }
+
+// Recent Posts
+#recent-posts {
+  @include shift(2);
+  @include span-columns(8);
+  @include pad(10px 0 75px 0);
+
+  .teaser--recent {
+    margin-top: 50px;
+  }
+  .meta {
+    float: right;
+  }
+}
+
+// Subscribe
+#subscribe {
+  @include shift(1);
+  @include span-columns(10);
+  @include pad(48px 0 45px);
+
+  margin-bottom: 105px;
+  background: white;
+  border-top: 4px solid $red;
+
+  .note {
+    float: left;
+    margin-left: $column;
+  }
+  .follow {
+    float: right;
+    margin-right: $column;
+  }
+}
+
+// About
+#about {
+  @include shift(1);
+  @include span-columns(9);
+  @include pad(79px 0 140px);
+
+  %tower-common {
+    margin-top: 30px;
+  }
+  .tower-icon {
+    @include span-columns(2 of 9);
+    @include retina-image('../img/icon-tower', 114px 147px);
+    @extend %tower-common;
+
+    height: 147px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  p {
+    @extend %tower-common;
+  }
+}
+
+// Footer
+footer {
+  @include span-columns(12);
+
+  font-size: $small-font-size;
+  height: 72px;
+  line-height: 72px;
+  text-align: center;
+}
