@@ -71,6 +71,34 @@ article.teaser--top {
   }
 }
 
+// Article Detail
+#full-article {
+  @include span-columns(12);
+
+  #article-content {
+    @include shift-in-context(1 of 12);
+    @include span-columns(10 of 12);
+  }
+  %article-images {
+    background-position: center;
+    border-radius: $base-border-radius;
+  }
+  #main-image {
+    @include size($main-image-size);
+    @include retina-image('../img/chevron-main-image', $main-image-size, 'jpg');
+    @extend %article-images;
+
+    margin: 72px 0 60px;
+  }
+  .content-image {
+    @include size($content-image-size);
+    @include retina-image('../img/image-article-content', $content-image-size, 'jpg');
+    @extend %article-images;
+
+    margin: 15px 0 27px;
+  }
+}
+
 // Subscribe
 #subscribe {
   @include shift(1);
