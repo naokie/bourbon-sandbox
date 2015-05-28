@@ -658,6 +658,15 @@ article.teaser--top {
   margin-bottom: 79px; }
   article.teaser--top:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    article.teaser--top {
+      float: left;
+      display: block;
+      margin-right: 4.56432%;
+      width: 82.57261%;
+      margin-left: 8.71369%; }
+      article.teaser--top:last-child {
+        margin-right: 0; } }
   article.teaser--top .teaser-image {
     height: 228px;
     width: 100%;
@@ -677,10 +686,22 @@ article.teaser--top {
   padding: 10px 0 75px 0; }
   #recent-posts:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    #recent-posts {
+      float: left;
+      display: block;
+      margin-right: 4.56432%;
+      width: 82.57261%;
+      margin-left: 8.71369%; }
+      #recent-posts:last-child {
+        margin-right: 0; } }
   #recent-posts .teaser--recent {
     margin-top: 50px; }
   #recent-posts .meta {
     float: right; }
+    @media screen and (max-width: 480px) {
+      #recent-posts .meta {
+        float: none; } }
 
 #full-article {
   float: left;
@@ -793,6 +814,15 @@ article.teaser--top {
       #about .tower-icon {
         background-image: url("../img/icon-tower_2x.png");
         background-size: 114px 147px; } }
+    @media screen and (max-width: 480px) {
+      #about .tower-icon {
+        float: left;
+        display: block;
+        margin-right: 6.17978%;
+        width: 100%;
+        text-align: center; }
+        #about .tower-icon:last-child {
+          margin-right: 0; } }
 
 footer {
   float: left;

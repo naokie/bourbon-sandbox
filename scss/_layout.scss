@@ -48,6 +48,11 @@ article.teaser--top {
   margin-top: 88px;
   margin-bottom: 79px;
 
+  @include media($mobile) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
   .teaser-image {
     @include size($teaser-image-size);
     @include background-image(url("../img/chevron-no-background.svg"), linear-gradient(#e34731 0%, #e34d35 33%, #e46143 34%, #e56244 66%, #e57b53 67%, #e57b53 100%));
@@ -64,11 +69,20 @@ article.teaser--top {
   @include span-columns(8);
   @include pad(10px 0 75px 0);
 
+  @include media($mobile) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
   .teaser--recent {
     margin-top: 50px;
   }
   .meta {
     float: right;
+
+    @include media($mobile) {
+      float: none;
+    }
   }
 }
 
@@ -168,6 +182,11 @@ article.teaser--top {
     @include span-columns(2 of 9);
     @include retina-image('../img/icon-tower', 114px 147px);
     @extend %tower-common;
+
+    @include media($mobile) {
+      @include span-columns(9 of 9);
+      text-align: center;
+    }
 
     height: 147px;
     background-repeat: no-repeat;
